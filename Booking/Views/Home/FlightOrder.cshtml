@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Message"] = "Đặt vé máy bay";
+}
+
+<!--procedure-->
+<div class="procedure">
+    <div class="procedure-container">
+        <div class="proceduce-item">
+            <div class="proceduce-number-1">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="proceduce-title-1">Chọn vé</div>
+        </div>
+        <hr>
+        <div class="proceduce-item">
+            <div class="proceduce-number-2">2</div>
+            <div class="proceduce-title-2">Thông tin hành khách</div>
+        </div>
+        <hr>
+        <div class="proceduce-item">
+            <div class="proceduce-number-3">3</div>
+            <div class="proceduce-title-3">Xác nhận</div>
+        </div>
+    </div>
+</div>
+<div class="airTicket-box">
+    <div class="airTicket-box-Container">
+        <div class="airTicket-box-left">
+            <div class="abl-title">Thông tin chuyến bay</div>
+            <div class="abl-trip">
+                <div class="abl-trip-1">
+                    <div class="abl-trip-left-1">
+                        <div class="abl-trip-title">Chiều đi: </div>
+                        <div class="abl-trip-nameAir">
+                            <img src="./images/air-vietjet.png" alt="">
+                            <div class="nameAir">VietJet Air (VJ-125)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abl-trip-2">
+                    <div class="abl-trip-left-2">
+                        <div class="abl-trip-province">Hà Nội (HAN)</div>
+                        <div class="abl-trip-time">28/08/2024</div>
+                    </div>
+                    <div class="abl-trip-center-2"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="abl-trip-right-2">
+                        <div class="abl-trip-province">Hồ Chí Minh (SGN)</div>
+                        <div class="abl-trip-time">29/08/2024</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="abl-return">
+                <div class="abl-return-1">
+                    <div class="abl-return-left-1">
+                        <div class="abl-return-title">Chiều về: </div>
+                        <div class="abl-return-nameAir">
+                            <img src="./images/air-vietravelairlines.png" alt="">
+                            <div class="nameAir">Vietravel Airlines (VU-718)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abl-return-2">
+                    <div class="abl-return-left-2">
+                        <div class="abl-return-province">Hà Nội (HAN)</div>
+                        <div class="abl-return-time">28/08/2024</div>
+                    </div>
+                    <div class="abl-return-center-2"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="abl-return-right-2">
+                        <div class="abl-return-province">Hồ Chí Minh (SGN)</div>
+                        <div class="abl-return-time">29/08/2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="airTicket-box-right">
+            <div class="abr-title">Chi tiết thanh toán</div>
+            <div class="abr-item">
+                <div class="abr-name">Giá vé:</div>
+                <div class="abr-price">3.309.000đ</div>
+            </div>
+            <div class="abr-item">
+                <div class="abr-name">Thuế & phí:</div>
+                <div class="abr-price">1.568.000đ</div>
+            </div>
+            <div class="abr-input"><input type="text" name="text" placeholder="Nhập mã giảm giá (nếu có)"></div>
+            <div class="abr-total">
+                <div class="abr-totalTitle">Tổng tiền: </div>
+                <div class="abr-totalPrice">5.954.800đ</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--INFORMATION GUEST-->
+<div class="inf-guest">
+    <div class="inf-guest-container">
+        <div class="inf-guest-title">Thông tin hành khách</div>
+        <div class="inf-guestItem">
+            <div class="guestItem-name">Người lớn 1, Họ và tên <span>*</span></div>
+            <div class="guestItem-input"><input type="text" class="inf-guest-input1" placeholder="Ví dụ: Nguyen Van An"></div>
+        </div>
+        <div class="inf-guestItem">
+            <div class="guestItem-name">Trẻ em 2, Họ và tên <span>*</span></div>
+            <div class="guestItem-input"><input type="text" class="inf-guest-input2" placeholder="Ví dụ: Nguyen Van An"></div>
+        </div>
+        <div class="inf-guestItem">
+            <div class="guestItem-name">Em bé 3, Họ và tên <span>*</span></div>
+            <div class="guestItem-input"><input type="text" class="inf-guest-input3" placeholder="Ví dụ: Nguyen Van An"></div>
+        </div>
+    </div>
+</div>
+<!--contact-info-->
+<div class="contact-info-air">
+    <div class="contact-container-air">
+        <div class="contact-title">Thông tin liên hệ</div>
+        <div class="list-input">
+            <div class="contact-left">
+                <div class="input-name">
+                    <label for="fullname">Họ và Tên:</label>
+                    <input type="text" id="fullname" placeholder="Nhập họ và tên">
+                    <p id="name-error" class="error-message">Vui lòng nhập họ và tên.</p>
+                </div>
+                <div class="input-phone">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" id="phone" placeholder="Nhập số điện thoại">
+                    <p id="phone-error" class="error-message">Vui lòng nhập số điện thoại.</p>
+                    <p id="phone-format-error" class="error-message">Định dạng số điện thoại không đúng.</p>
+                </div>
+                <div class="input-email-contact">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Để gửi thông tin vé , lịch trình, thanh toán">
+                    <p id="email-error" class="error-message">Vui lòng nhập email.</p>
+                    <p id="email-format-error" class="error-message">Định dạng email không đúng.</p>
+                </div>
+                <button class="btn-request" onclick="validateForm()">Tiếp tục</button>
+            </div>
+            <div class="contact-right">
+                <div class="contact-right-title">Nội dung yêu cầu</div>
+                <textarea name="content-request" id="content-request"></textarea>
+            </div>
+
+
+        </div>
+        <!-- Thông báo thanh trượt -->
+        <div id="notification" class="notification">Successfully !</div>
+
+    </div>
+</div>

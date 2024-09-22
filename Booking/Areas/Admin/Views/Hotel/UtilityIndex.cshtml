@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Utility>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="UtilityCreate">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Icon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UtilityName)
+            </th>
+            <th style="min-width: 165px;">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.Raw(item.Icon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UtilityName)
+            </td>
+            <td>
+                <a asp-action="UtilityEdit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="UtilityDetails" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="UtilityDelete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
